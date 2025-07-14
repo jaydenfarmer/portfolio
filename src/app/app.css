@@ -1,0 +1,50 @@
+/* Custom styles for portfolio */
+body {
+  padding-top: 56px; /* Account for fixed navbar */
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #0d6efd 0%, #6f42c1 100%);
+}
+
+.hero-icon {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.btn {
+  border-radius: 25px;
+  padding: 10px 25px;
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
